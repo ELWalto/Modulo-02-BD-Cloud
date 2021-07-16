@@ -1,8 +1,10 @@
-function humor() {
-    document.getElementById("feliz").src = "sp-guitarra";
-
-    document.getElementById("sp-guitarra").src = "sp-pistola";
-
-    document.getElementById("sp-pistola").src = "sp-feliz";
-
+var element = document.getElementById('Imagem');
+element.onclick = function() {
+    if (element.src.match("img/sp-feliz.jpg")) {
+        element.src = "sp-feliz.jpg";
+    } 
+    else {
+        element.src="sp-pistola.jpg";
+    }
 }
+
