@@ -12,7 +12,7 @@ html{
 
 /* Comentario */
 nav{
-   background-color: #3359ec;
+   background-color: #c91212ee;
    font-weight: 500;
    position: fixed;
    width: 100%;
@@ -40,7 +40,7 @@ header{
    padding: 3rem;
 }
 
-header div#img-rocket {
+header div#img-tech {
    display: flex;
    justify-content: center;
 }
@@ -48,16 +48,16 @@ header div#img-rocket {
 header div p{
    font-size: 2vw;
    font-weight: 700;
-   color: #3359ec;
+   color: #c91212ee;
 }
 
 header div span{
    font-size: 1vw;
    font-weight: 500;
-   color: #0066ff;
+   color: #b14848f5;
 }
 
-header div#img-rocket img{
+header div#img-tech img{
    width: 60%;
 }
 
@@ -66,7 +66,7 @@ section#sobre-mim{
    justify-content: center;
    align-items: center;
    padding: 4rem;
-   background-color: #3359ec;
+   background-color: #0f2c9e;
 }
 
 
@@ -170,7 +170,7 @@ section#habilidades div span#html{
    width: 50%;
 }
 
-section#habilidades div span#css{
+section#habilidades div span#css {
    background-color: #3359ec;
    color: #fff;
    text-align: center;
@@ -178,3 +178,13 @@ section#habilidades div span#css{
    border-radius: 1rem;
    width: 30%;
 }
+
+section#habilidades div span#Postgree {
+   background-color: #3359ec;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 30%;
+}
+
