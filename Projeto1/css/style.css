@@ -9,10 +9,11 @@
 
 body p {
     padding: 1rem;
-    font-weight: 400;
+    font-weight: 700;
     justify-content:center;
     text-align: left;
     margin-left: 5%;
+    color: red;
 }
 
 body input {
@@ -23,10 +24,49 @@ body input {
 }
 
 
-body div{
-    display: block;
+body div img{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    
+    
+}
+
+body div p{
+    display:flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    padding-bottom: 1rem;
     
+}
+
+body div span{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+    color: black;
+    
+}
+
+body div input{
+    margin-top: 1rem;
+    margin-left: 48%;    
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+    
+}
+
+
+body div input:hover {
+    background-color:rgba(250, 4, 4, 0.644);
+    color: white;
+    transform: scale(1.2);
+    align-items: center;   
 }
