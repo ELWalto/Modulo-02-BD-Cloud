@@ -73,6 +73,8 @@ section#sobre-mim{
 section#sobre-mim div img{
    width: 60%;
    border-radius: 50%;
+   display: block;
+   margin: auto;
 
 }
 
@@ -81,16 +83,19 @@ section#sobre-mim div p{
    text-align: justify;
    color: #fff;
    line-height: 2.5rem;
+   display: block;
+   margin: auto;
 }
 
 section#projetos{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 3rem;
+   display: flex; /*Acioa o flex-box e colca um item do lado do outro automaticamente*/
+   justify-content: center; /*Alinha os itens horizontalmente*/
+   align-items: center; /*Alinha os itens verticalmente*/
+   padding: 3rem; /*Espaçamento interno nos elementos*/
 }
 
 section#projetos div img{
+   /*Alinham o elemento (tag) centralmente*/
    display: block;
    margin: auto;
 }
@@ -188,3 +193,102 @@ section#habilidades div span#Postgree {
    width: 30%;
 }
 
+section#contato {
+   padding: 3rem 10rem 3rem 10rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+}
+section#contato div#redes{
+   width: 100%;
+
+}
+
+section#contato div#redes h3{
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+
+}
+
+section#contato div#redes div#icons{
+   display: flex;
+   justify-content: center;
+
+}
+section#contato div#redes div#icons a{ 
+   text-decoration: none;
+   color:#0f2c9e;
+   font-size: 4rem;
+   padding: 2rem;
+   transition: all .4s ease-out;
+
+
+
+}
+section#contato div#redes div#icons a:hover{
+   color:#3359ec;
+}
+
+section#contato div#redes div#icons a i{
+   transition: all .4s ease-out;
+}
+
+section#contato div#redes a i:hover{
+   transform: scale(1.2);
+
+
+}
+
+section#contato div#form{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+section#contato div#form h3{
+   width: 100%;
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+section#contato div#form form{
+   width: 50%;
+}
+
+/* A virgula serve para estilizar dois elementos ao mesmo tempo */
+section#contato div#form form input, textarea{
+   width: 100%;
+   padding: .5rem;
+   font-size: 1.1rem;
+   border: 1px solid #ccc;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   outline: none; /* Retira a borda do input quando clico dentro dele */
+}
+
+section#contato div#form form label{
+   font-size: 1.2rem;
+}
+
+section#contato div#form form button{
+   border: 1px solid #3359ec;
+   background-color: #fff;
+   color: #3359ec;
+   padding: 1rem;
+   font-size: 1.5vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width: 40%;
+}
+
+section#contato div#form form button:hover{
+   background-color: #3359ec;
+   color: #fff;
+   transform: scale(1.2);
+}

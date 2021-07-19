@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Projeto 01 mudança de humor</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projeto 01 Jogo do humor</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
 
-<body>
-    <div>
-        <h1> Mascote Santo Paulo </h1>
-        <span> Santo Paulo feliz </span>
-        <img id="Imagem" src="./img/sp-feliz.jpg" alt="sp-feliz"  width="320" height="205" />
-        <form >
-            <input id="Button" type="button" value="Humor" onclick="on()">
-        </form>
+        <header>
+            <h1>Jogo do humor Santo Paulo</h1>
+            
+        </header> 
 
-        <script src="./js/humor.js"></script>
-    </div>
+        <section id="infos">
 
+            <div id="txt">
+                <h2>Nome: <span id="nome"> Santo Paulo conformado </span> </h2>
+                <h3> Situação: <span id="situacao"> Meio da tabela</span> </h3>
+                <button value='primeiro' id="alterar">Alterar situação</button> 
+            </div>
+        
+            <div id="img">
+                <img id="imagem" src="./assets/img/Santo-Paulo-Feliz.png" alt="Santo Paulo feliz">
+            </div>
+            
 
-
-</body>
-
-
+        </section>
+    
+        <script type="text/javascript" src="./assets/js/index.js"></script>
+    </body>
 </html>
