@@ -12,12 +12,27 @@ inputNome.addEventListener('keyup', () => {
    }
 })
 
-inputEmail.addEventListener('keyup',() =>{
-    if (inputEmail.value.indexOF('@') == -1 || inputEmail.value.indexOF('.') == -1){
-        inputEmail.style.borderColor = 'red'
-    } else{
+inputEmail.addEventListener('keyup',() => {
+    if(inputEmail.value.indexOf('@') == -1 || inputEmail.value.indexOf('.') == -1){
+        inputEmail.style.borderColor = 'red' /* Troca a cor da borda do input para red */
+     } else {
         inputEmail.style.borderColor = 'green'
-    }
+     }
 
 })
+
+textareaMensagem.addEventListener('keyup', ()=>{
+    /* Verifica se o tamanho do valor do textareaMensagem é maior que 100  */
+    if(textareaMensagem.value.length > 100){
+       textareaMensagem.style.borderColor = 'red' /* Troca a cor da borda do input para red */
+    } else {
+       textareaMensagem.style.borderColor = 'green' /* Troca a cor da borda do input para green */
+    }
+ })
+ 
+ /* Adiciona um evento de click no btnEnviar e realiza a função */
+ btnEnviar.addEventListener('click', () => {
+    alert('Formulário enviado com sucesso!') /* Mostra um alerta na tela com essa mensagem */
+ })
+ 
 

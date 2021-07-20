@@ -10,7 +10,7 @@ elementoBtn.addEventListener('click', () =>{
         elementoSituacao.innerText = 'Primeiro na tabela' 
         elementoBtn.value = 'segundo' 
     } else if(elementoBtn.value == 'segundo') { 
-        elementoImg.src = './assets/img/sp-pistola.png' 
+        elementoImg.src = './assets/img/sp-pistola-redimensionada.png' 
         elementoNome.innerText = 'Santo Paulo pistola' 
         elementoSituacao.innerText = 'Zona de rebaixamento' 
         elementoBtn.value = 'terceiro'  
