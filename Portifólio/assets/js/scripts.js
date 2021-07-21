@@ -21,7 +21,7 @@ inputEmail.addEventListener('keyup',() => {
 
 })
 
-textareaMensagem.addEventListener('keyup', ()=>{
+textareaMensagem.addEventListener('keydown', ()=>{
     /* Verifica se o tamanho do valor do textareaMensagem é maior que 100  */
     if(textareaMensagem.value.length > 100){
        textareaMensagem.style.borderColor = 'red' /* Troca a cor da borda do input para red */

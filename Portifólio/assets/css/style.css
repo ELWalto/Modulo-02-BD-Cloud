@@ -144,38 +144,54 @@ section#projetos{
    display: flex; /*Acioa o flex-box e colca um item do lado do outro automaticamente*/
    justify-content: center; /*Alinha os itens horizontalmente*/
    align-items: center; /*Alinha os itens verticalmente*/
-   padding: 3rem; /*Espaçamento interno nos elementos*/
+   padding: 2rem; /*Espaçamento interno nos elementos*/
+   text-align: center;
+
 }
 
 section#projetos div img{
-   /*Alinham o elemento (tag) centralmente*/
    display: flex;
    margin: auto;
-   width: 50%;
-   border-radius: 2rem;
+   width: 60%;
+   border-radius: 4rem;
    flex-wrap: wrap;
+   align-items: center;
+   text-align: justify;
+   font-size: 1.3rem;
+   text-align: center;
+   justify-content: center;
+   
+   
 }
 
 section#projetos div h2{
    text-align: center;
    padding: 1rem;
    justify-content: center;
+   align-items: center;
 }
 
 section#projetos div p{
    text-align: justify;
-   font-size: 1.3rem;
-   text-align: center;
+   font-size: 1.2rem;
    justify-content: center;
    display: flex;
+   align-items: center;
+   padding: 1rem;
+   line-height: 1.9rem;
 }
 
 section#projetos div{
-   padding: 2rem;
+   padding: 1rem;
    
 }
+section#projetos a {
+   text-decoration: none;
 
-section#projetos div button{
+
+}
+
+section#projetos div  button{
    border: 1px solid #3359ec;
    background-color: #fff;
    color: #3359ec;
@@ -183,7 +199,7 @@ section#projetos div button{
    font-size: .8vw;
    font-weight: 600;
    border-radius: .5rem;
-   display: block;
+   display: flex;
    margin: auto;
    margin-top: 2rem;
    cursor: pointer;
@@ -198,11 +214,7 @@ section#projetos div button:hover{
    transform: scale(1.2);
    text-decoration: none;
 }
-section#projetos div a#projeto1 button{
 
-   text-decoration: none;
-   
-}
 
 section#habilidades{
    padding: 3rem 10rem 3rem 10rem;
@@ -264,7 +276,7 @@ section#habilidades div span#Javascript {
    text-align: center;
    padding: .3rem;
    border-radius: 1rem;
-   width: 30%;
+   width: 10%;
 }
 
 section#habilidades div span#Postgree {
@@ -273,7 +285,7 @@ section#habilidades div span#Postgree {
    text-align: center;
    padding: .3rem;
    border-radius: 1rem;
-   width: 30%;
+   width: 10%;
 }
 
 section#contato {
@@ -333,7 +345,7 @@ section#contato div#form{
 section#contato div#form h3{
    width: 100%;
    text-align: center;
-   font-size: 2.5rem;
+   font-size: 2.2rem;
    margin-bottom: 2rem;
 }
 
@@ -378,16 +390,16 @@ section#contato div#form form button:hover{
 }
 
 footer{
-   padding: 3rem;
+   padding: 1rem;
    background-color:#22577a;
    justify-content: center;
    display: flex;
    color: #fff;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
 }
 
 footer span{
-   margin-left: 3rem;
+   margin-left: 2rem;
    justify-content: center;
    display: flex;
    text-align: center;
@@ -397,8 +409,9 @@ footer span{
 
 footer img{
    padding-left:2rem ;
-   width: 2.2rem;
+   width: 2rem;
    display: flex;
    justify-content: center;
    text-align: center;
+   align-items: center;
 }
