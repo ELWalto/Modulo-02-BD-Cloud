@@ -9,7 +9,7 @@
 }
 
 html{
-   scroll-behavior: smooth;
+   scroll-behavior:smooth;
 }
 
 /* Comentario */
@@ -351,7 +351,7 @@ section#contato div#form h3{
 }
 
 section#contato div#form form{
-   width: 50%;
+   width: 60%;
 }
 
 /* A virgula serve para estilizar dois elementos ao mesmo tempo */
@@ -416,3 +416,106 @@ footer img{
    text-align: center;
    align-items: center;
 }
+section#contato div#carregamento{
+   display: none; /* Deixa o display none para não aparecer até que você clique no botão enviar (ver JS) */
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 3rem;
+ }
+ 
+ section#contato div#carregamento p{
+   color: #22577a;
+   font-weight: 700;
+   font-size: 2rem;
+   width: 100%;
+   text-align: center;
+   padding: 2rem;
+ }
+ 
+ section#contato div#carregamento div#loader{
+   border: 13px solid #fff;
+   border-radius: 50%;
+   border-top: 13px solid #22577a;
+   border-bottom: 13px solid #22577a;
+   width: 80px;
+   height: 80px;
+   /* Anima o elemento div#loader criando a variável spin, em 2s de forma linear e infinita */
+   animation: spin 2s linear infinite;
+ }
+ 
+ /* Anima a variável spin do animation */
+ @keyframes spin {
+   0% {  /* Começa em 0% */
+     transform: rotate(0deg); /* Rotação do elemento no 0° */ 
+   } 
+   100% { /* Vai até 100% */
+     transform: rotate(360deg); /* Rotação do elemento em 360° */ 
+   }
+ }
+ 
+ 
+ /* Página Send */
+ 
+ section#success{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   
+   
+ }
+ 
+ section#success div#card{
+   background-image: linear-gradient(to right, #22577a, transparent);
+   text-align: center;
+   padding: 4rem;
+   border-radius: 2rem;
+   color:black;
+   width: 40%;
+   background-color: #ccc;
+   border-radius: 5rem;
+ }
+ 
+ section#success div#card h1{
+   margin: 2rem 0rem;
+ }
+ 
+ section#success div#card i{
+   font-size: 5rem;
+ }
+ 
+ section#success div#card h3{
+   margin-bottom: 2rem;
+ }
+ 
+ section#success div#card p{
+   margin-bottom: 3rem;
+   width: 100%;
+   word-break: break-word;
+ }
+ 
+ section#success div#card a{
+   border: 1px solid #3359ec;
+   background-color: #fff;
+   color: #3359ec;
+   padding: 1rem;
+   font-size: 1.2vw;
+   font-weight: 500;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width: 30%;
+   text-decoration: none;
+   border-radius: 3rem;
+ }
+ 
+ section#success div#card a:hover{
+   background-color:#22577a;
+   color: #fff;
+   border: #3359ec;
+   box-shadow: #ccc .5rem .5rem;
+   transform: scale(1.2);
+   border-radius: 3rem;
+ }

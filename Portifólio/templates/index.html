@@ -6,8 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfólio</title>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon">
-   <link rel="stylesheet" href="./assets/css/style.css">
+   <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
+   <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
       </div>
 
       <div id="img-tech">
-         <img src="./assets/img/Chat bot.gif" alt="imagem de um robo e uma pessoa"/>
+         <img src="../static/img/Chat-bot.gif" alt="imagem de um robo e uma pessoa"/>
       </div>
 
    </header>
@@ -38,7 +38,7 @@
    <section id="sobre-mim">
 
       <div>
-         <a href="https://www.linkedin.com/in/walter-de-carvalho/"><img src="./assets/img/Walter-remove-bg.png" width="100" alt="Foto 3x4 do Walter"> </a>
+         <a href="https://www.linkedin.com/in/walter-de-carvalho/"><img src="../static/img/Walter-remove-bg.png" width="100" alt="Foto 3x4 do Walter"> </a>
       </div>
 
       <div>
@@ -51,14 +51,14 @@
    <section id="projetos">
 
       <div>
-         <img src="./assets/img/pedra-papel-e-tesoura.png" alt="imagem jogo jan ken po">
+         <img src="../static/img/pedra-papel-e-tesoura.png" alt="imagem jogo jan ken po">
          <h2>Projeto 1</h2>
          <p>Jogo do Jan Ken Po  criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
          <a href="https://github.com/ELWalto/modulo1-Blue/blob/main/Projetos/Projeto_jokenp%C3%B4_Walter.py"target="blank"><button>Veja mais</button></a>
       </div>
 
       <div>
-         <img src="./assets/img/Detetive.png" alt="imagem de um Detetive">
+         <img src="../static/img/Detetive.png" alt="imagem de um Detetive">
          <h2>Projeto 2</h2>
          <p>Projeto do detetive criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
 
@@ -66,14 +66,14 @@
       </div>
 
       <div>
-         <img src="./assets/img/urna.png" alt="imagem de uma urna eletrônica">
+         <img src="../static/img/urna.png" alt="imagem de uma urna eletrônica">
          <h2>Projeto 3</h2>
          <p>Projeto simulador de votação criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
          <a href="https://github.com/ELWalto/modulo1-Blue/blob/main/Projetos/Projeto-03%20%E2%80%93%20Simulador-de-Vota%C3%A7%C3%A3o-Walter.py"><button>Veja mais</button></a>
       </div>
 
       <div>
-         <img src="./assets/img/controle.jpg" alt="imagem de um controle de video-game">
+         <img src="../static/img/controle.jpg" alt="imagem de um controle de video-game">
          <h2>Projeto 4</h2>
          <p>Jogo Ficção interativa criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
          <a href="https://github.com/ELWalto/modulo1-Blue/tree/main/Projetos/projeto-final-master" target="blank"><button>Veja mais</button></a>
@@ -129,7 +129,7 @@
     <div id="form">
       <h3>Mande uma mensagem</h3>
       
-      <form action="">
+      <form action='/send', method='POST'>
          <label for="nome">Nome</label>
          <input id="nome" name="nome" type="text" required placeholder="Nome completo">
           
@@ -142,7 +142,10 @@
 
 
       </form>
-
+      <div id="carregamento">
+         <p>Enviando mensagem</p>
+         <div id="loader"></div>
+      </div>
     </div>
 
    </section>
@@ -150,10 +153,10 @@
 <footer>
    <p> Todos os direitos reservados</p>
    <span>#BeTheDifference</span>
-   <img src="./assets/img/copy.png" alt="logo copyright">
+   <img src="../static/img/copy.png" alt="logo copyright">
 
 </footer>
-   <script src="./assets/js/scripts.js"></script>
+   <script src="../static/JS/script.js"></script>
 </body>
 
 </html>
