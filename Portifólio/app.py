@@ -47,7 +47,7 @@ def send():
          sender = app.config.get("MAIL_USERNAME"), # Quem vai enviar o email, pega o email configurado no app (mail_settings)
          recipients = [app.config.get("MAIL_USERNAME")], # Quem vai receber o email, mando pra mim mesmo, posso mandar pra mais de um email.
          # Corpo do email.
-         body=f'''O {formContato.nome} com o email {formContato.email}, te mandou a seguinte mensagem: 
+         body=f''' {formContato.nome} com o email {formContato.email}, te mandou a seguinte mensagem: 
          
                {formContato.mensagem}''' 
          )

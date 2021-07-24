@@ -10,6 +10,7 @@
 html, body {
    width: 100%; /* Largura de 100% da tela disponível no html e no body */
    height: 100%; /* Altura de 100% da tela disponível no html e no body */
+   background-image: linear-gradient(to bottom, #070537, #00356a, #00659b, #0099c7, #12cfeb);
 }
 
 header {
@@ -17,7 +18,7 @@ header {
    justify-content: center; /* Centraliza todos os itens dentro do header */
    flex-wrap: wrap; /* Quebrar linha caso não haja espaço na mesma linha */
    width: 100%; /* Header ocupa 100% da tela disponível */
-   background-color: #3359ec; /* cor de fundo no header */
+   
 }
 
 header h1{
@@ -25,7 +26,9 @@ header h1{
    text-align: center; /* centraliza o texto na tela */
    padding: 4rem; /* espaçamento interna em todos os lados de 4rem */
    color: #fff; /* cor do texto */
-   font-size: 3rem; /* tamanho do texto em 3rem */
+   font-size: 5rem; /* tamanho do texto em 3rem */
+   text-shadow:#fff .5rem .5rem 5rem ;
+   
 }
 
 header form{
@@ -33,14 +36,17 @@ header form{
    display: flex; /* display flex em todos os elementos filhos do form */
    justify-content: center; /* Centraliza todos os elementos */
    padding: 0 3rem 3rem 3rem; /* espaçamento interna de 3rem de todos os lados menos em cima */
+   
 }
 
 header form input{
    width: 60%; /* Largura de 60% no input*/
-   padding: .5rem; /* espaçamento interno de .5rem no input */
+   padding: .9rem; /* espaçamento interno de .5rem no input */
    font-size: 1.2rem; /* Tamanho da fonte do texto que será digitado no input */
    border: 1px solid #3359ec; /* borda do input */
    outline: none; /* Tira a linha do input quando ele é clicado */
+   border-radius: 1rem;
+   box-shadow: black .5rem .5rem 1rem;
 }
 
 header form button{
@@ -48,17 +54,22 @@ header form button{
    background-color: #fff; /* Cor de fundo do botão */
    color: #3359ec; /* cor do texto no botão */
    padding: .5rem; /* espaçamento interno no botão */
-   font-size: 1.2rem; /* tamanho da font do botão */
+   font-size: 1.3rem; /* tamanho da font do botão */
    font-weight: 600; /* peso da font do botão */
    cursor: pointer; /* curso de "mãozinha" no botão */
    transition: .3s ease-out; /* transição para o hover */
    width: 10rem; /* largura fixa de 10rem */
+   border-radius: 1rem;
+   box-shadow: black .5rem .5rem 1rem;
+   margin-left: 10px;
 }
 
 header form button:hover{ /* hover serve para fazer algo quando passar o mouse no elemento */
    background-color: #3359ec; /* muda a cor de fundo quando passar o mouse no botão */
    color: #fff; /* muda a cor da fonte quando passar o mouse no botão */
    border: 1px solid #ffff; /* muda a cor da borda quando passar o mouse no botão */
+   transition: all .5s ease-out;
+   display: block
 }
 
 section a{
@@ -66,17 +77,29 @@ section a{
    margin-left: auto; /* margin a esquerda auto, graças ao display block, link vai para a direita totalmente */
    text-decoration: none; /* tira toda a decoração do link (underline) */
    color: #3359ec; /* cor do link */
-   font-size: 1.2rem; /* tamanho da fonte do link */
+   font-size: 1.5rem; /* tamanho da fonte do link */
    transition: .3s ease-out; /* transição para quando houver o hover no link */
-   width: 7rem; /* largura fixa do link */
+   width: 11rem; /* largura fixa do link */
+   background-color: #fff;
+   padding: .5rem;
+   text-align: center;
+   padding: 1rem;
+   margin-bottom: 1.5rem;
+   width: 10rem;
+   font-weight: 600;
+   border-radius: 1rem;
+   box-shadow: black .5rem .5rem 1rem;
 }
 
 section a:hover{
-   color: #aabbff; /* muda a cor da fonte quando passar o mouse no botão */
+   background-color: #3359ec; /* muda a cor de fundo quando passar o mouse no botão */
+   color: #fff; /* muda a cor da fonte quando passar o mouse no botão */
+   border: .5px solid #ffff; /* muda a cor da borda quando passar o mouse no botão */
+   transition: all .5s ease-out;
 }
 
 section{
-   padding: 4rem; /* espaçamento interno da section */
+   padding: 5rem; /* espaçamento interno da section */
 }
 
 section ul{
@@ -86,9 +109,15 @@ section ul{
 section ul li{
    padding: 1rem; /* espaçamento interno em cada li */
    cursor: pointer; /* quando passar o mouse na li, o cursor sera a "mãozinha" */
-   border-bottom: .1rem solid #ccc; /* borda inferior em cada li */
-   font-size: 1.2rem; /* tamanho da font da li */
+   border-bottom: .2rem solid #ccc; /* borda inferior em cada li */
+   font-size: 1.5rem; /* tamanho da font da li */
    transition: .3s ease-out; /* transição pra quando passar o mouse no li */
+   background-color: #fff;
+   color: #070537;
+   border-radius: 1rem;
+   font-weight: 500;
+   text-align: center;
+   box-shadow: #00356a 1rem .5rem .5rem;
 }
 
 section ul li:hover{

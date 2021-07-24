@@ -5,6 +5,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../static/style.css">
+   <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
    <title>To do List</title>
 </head>
 <body>
@@ -26,9 +28,9 @@
 
       <ul>
          <!-- Varre a lista itens, mostrando item por item na li -->
-         {% for item in itens %} 
+         {% for item in itens %} <!-- está é a maneira de fazer um for em html-->
          <li class="itens">
-            {{item}}
+            {{item}} 
          </li>
          {% endfor %}
       </ul>

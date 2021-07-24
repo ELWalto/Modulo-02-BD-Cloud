@@ -1,8 +1,8 @@
 from flask import Flask, render_template, redirect,request
 
-app = Flask(__name__)
+app = Flask(__name__)  # instanciando objeto
 itens = list()
-@app.route('/') #Toda rota requer uma função
+@app.route('/') #Toda rota requer uma função ; Rota principal 
 def index():
     return render_template('index.html', titulo='Lista', itens=itens)
 
