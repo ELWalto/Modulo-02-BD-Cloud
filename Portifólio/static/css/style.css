@@ -14,7 +14,7 @@ html{
 
 /* Comentario */
 nav{
-   background-color: #22577a;
+   background-image: linear-gradient(to bottom, #070537, #00356a, #00659b, #0099c7, #12cfeb);
    font-weight: 700;
    position: fixed;
    width: 100%;
@@ -101,7 +101,9 @@ header div span{
 }
 
 header div#img-tech img{
-   width: 60%;
+   width: 50%;
+   border-radius: 5rem;
+
 }
 
 section#sobre-mim{
@@ -121,6 +123,7 @@ section#sobre-mim div img{
    border-style:solid;
    border-color: #fff;
    border-width: .5rem;
+   background-image: linear-gradient(to bottom, #070537, #00356a, #00659b, #0099c7, #12cfeb);
 
 
 }
@@ -160,7 +163,7 @@ section#projetos div img{
    font-size: 1.3rem;
    text-align: center;
    justify-content: center;
-   
+   border-radius: 3rem;
    
 }
 

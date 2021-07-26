@@ -1,23 +1,25 @@
-/* Cria a variável inputNome e coloca nela o elemento que possui o id nome */
-let inputNome = document.querySelector('#nome')
-let inputEmail = document.querySelector('#email')
-let textareaMensagem = document.querySelector('#mensagem')
-let btEnviar = document.querySelector('#enviar')
+let inputNome = document.querySelector('#nome') /* Cria a variável inputNome e coloca nela o elemento que possui o id nome */
+let inputEmail = document.querySelector('#email') /* Cria a variável inputEmail e coloca nela o elemento que possui o id email */
+let textareaMensagem = document.querySelector('#mensagem') /* Cria a variável textareaMensagem e coloca nela o elemento que possui o id mensagem */
+let btnEnviar = document.querySelector('#enviar') /* Cria a variável btnEnviar e coloca nela o elemento que possui o id enviar */
 let nomeOk = false /* variável de controle para o botão */
 let emailOk = false /* variável de controle para o botão */
 let msgOk = false /* variável de controle para o botão */
 btnEnviar.disabled = true /* Desabilita o botão assim que inicia a página html */
-/* Só posso utilziar a arrow function (=>) quando a função não tiver nome */
-inputNome.addEventListener('keyup', () => { 
-   if(inputNome.value.length <= 2) {
-      inputNome.style.borderColor = 'red'
+ 
+
+/* Adiciona um evento de keyup no inputNome e realiza a função ***TROQUEI A FUNÇÃO PARA KEYDOWN PARA MELHORAR A VALIDAÇÃO  ****/
+inputNome.addEventListener('keydown', () => { 
+   /* Verifica se o tamanho do valor do inputNome é menor que 2  para evitar que digitem nome como Jó*/
+   if(inputNome.value.length < 2){
+      inputNome.style.borderColor = 'red' /* Troca a cor da borda do input para red  se tiver menos que 2 caracteres*/
       nomeOk = false
    } else {
-      inputNome.style.borderColor = 'green'
+      inputNome.style.borderColor = 'green' /* Troca a cor da borda do input para green  quando o campo tiver mais de 2 caracteres*/
       nomeOk = true
    }
 
-   if(inputNome.value == '' || inputNome.value == undefined || inputNome.value == null) {
+   if(inputNome.value == '' || inputNome.value == undefined || inputNome.value == null) { 
       inputNome.style.borderColor = '#ccc'
    }
 
@@ -28,17 +30,27 @@ inputNome.addEventListener('keyup', () => {
       btnEnviar.disabled = true
    }
 
-
 })
 
-inputEmail.addEventListener('keyup',() => {
+
+/* Adiciona um evento de keyup no inputEmail e realiza a função */
+inputEmail.addEventListener('keyup', () => {
+   /* 
+   O indexOf procura um caractere no valor do inputEmail, se esse valor não existir ele retorna -1. 
+   Então essa expressão inputEmail.value.indexOf('@') == -1 é a mesmo coisa que:
+   Se no valor de inputEmail não existir @, faça...
+   || é o operador OU em JavaScript
+   && é o operador E em JavaScript
+   */
    if(inputEmail.value.indexOf('@') == -1 || inputEmail.value.indexOf('.') == -1){
-        inputEmail.style.borderColor = 'red' /* Troca a cor da borda do input para red */
-        emailOk = false
+      inputEmail.style.borderColor = 'red' /* Troca a cor da borda do input para red */
+      emailOk = false
    } else {
-        inputEmail.style.borderColor = 'green'
-        emailOk = true
-   }
+      inputEmail.style.borderColor = 'green' /* Troca a cor da borda do input para green */
+      emailOk = true
+   }  
+
+   /* Se todas as variáveis forem true habilita o botão */
    if (nomeOk && emailOk && msgOk) {
       btnEnviar.disabled = false
    } else { /* se não, desabilita */
@@ -46,23 +58,27 @@ inputEmail.addEventListener('keyup',() => {
    }
 })
 
-textareaMensagem.addEventListener('keydown', ()=>{
-    /* Verifica se o tamanho do valor do textareaMensagem é maior que 100  */
-    if(textareaMensagem.value.length > 100){
-       textareaMensagem.style.borderColor = 'red' /* Troca a cor da borda do input para red */
-       msgOk = false
-    } else {
-       textareaMensagem.style.borderColor = 'green' /* Troca a cor da borda do input para green */
-       msgOk = true
+/* Adiciona um evento de keyup no textareaMensagem e realiza a função */
+textareaMensagem.addEventListener('keyup', ()=>{
+   /* Verifica se o tamanho do valor do textareaMensagem é maior que 100  */
+   if(textareaMensagem.value.length > 100){
+      textareaMensagem.style.borderColor = 'red' /* Troca a cor da borda do input para red */
+      msgOk = false
+   } else {
+      textareaMensagem.style.borderColor = 'green' /* Troca a cor da borda do input para green */
+      msgOk = true
    }
+
+   /* Se todas as variáveis forem true habilita o botão  para envio do formulário de contato*/
    if (nomeOk && emailOk && msgOk) {
       btnEnviar.disabled = false
    } else { /* se não, desabilita */
       btnEnviar.disabled = true
    }
- })
- 
- btnEnviar.addEventListener('click', () => {
+})
+
+
+btnEnviar.addEventListener('click', () => {
    /* Pega a div de carregamento */
    let carregamento = document.querySelector('#carregamento')
    /* Mostra a div de carregamento, adicionando o 'flex' ao display */
