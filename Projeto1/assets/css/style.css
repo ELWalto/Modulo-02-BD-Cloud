@@ -18,6 +18,7 @@ header {
     background-position:center; /* Centraliza a imagem de fundo */
     height: 300px;
     width: 100%;
+    
 }
 
 header h1{
@@ -28,17 +29,20 @@ header h1{
     text-shadow: .3rem .3rem #a80000;
     text-align:center;
     justify-content:center;
+    display: flex;
 
 }
 
 section img#footer{
     opacity: .7;
-    display: center;
+    display: flex;
     background-size: cover;
     flex-wrap: wrap;
     width: 100%;
     height: 80rem;
     padding: .1rem;
+    align-items: center;
+    align-content: center;
     
 
 
@@ -47,6 +51,7 @@ section img#footer:hover{
     transform:scale(1.1);
     transition:all 0.6s ease;
     opacity: 1;
+    display: flex;
     
 }
 
