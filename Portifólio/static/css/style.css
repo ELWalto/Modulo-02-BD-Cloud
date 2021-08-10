@@ -149,6 +149,7 @@ section#projetos{
    align-items: center; /*Alinha os itens verticalmente*/
    padding: 2rem; /*Espaçamento interno nos elementos*/
    text-align: center;
+   position : relative;
 
 }
 
@@ -191,6 +192,23 @@ section#projetos div{
 }
 section#projetos a {
    text-decoration: none;
+
+
+}
+section#projetos a i{
+   text-decoration: none;
+   padding: 1rem;
+   text-align: end;
+   text-decoration: none;
+   color: #00356a;
+   font-size: 2rem;
+   transition: all .2s ease-out;
+   position: absolute;
+   top: 0;
+   right: 1rem;
+   font-size: 3rem;
+  
+
 
 
 }

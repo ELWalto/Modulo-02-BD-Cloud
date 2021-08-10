@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
    <link rel="stylesheet" href="../static/css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -49,35 +51,22 @@
    </section>
 
    <section id="projetos">
+      <a href="/login" id="config"> 
+         <i class="fa fa-cog" aria-hidden="true"></i>
+      </a>
 
+      {% for p in projetos %}
       <div>
-         <img src="../static/img/pedra-papel-e-tesoura.png" alt="imagem jogo jan ken po">
-         <h2>Projeto 1</h2>
-         <p>Jogo do Jan Ken Po  criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
-         <a href="https://github.com/ELWalto/modulo1-Blue/blob/main/Projetos/Projeto_jokenp%C3%B4_Walter.py"target="blank"><button>Veja mais</button></a>
+         <img src="{{p.imagem}}" alt="img-lorem">
+         <h2>{{p.nome}}</h2>
+         <p>{{p.descricao}}</p>
+         <a href="{{p.link}}" target="_blank">Veja mais</a>
       </div>
+      {% endfor %}
 
-      <div>
-         <img src="../static/img/Detetive.png" alt="imagem de um Detetive">
-         <h2>Projeto 2</h2>
-         <p>Projeto do detetive criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
+   </section>
 
-         <a href="https://github.com/ELWalto/modulo1-Blue/blob/main/Projetos/Projeto1-WalterCarvalho.py"><button>Veja mais</button></a>
-      </div>
 
-      <div>
-         <img src="../static/img/urna.png" alt="imagem de uma urna eletrônica">
-         <h2>Projeto 3</h2>
-         <p>Projeto simulador de votação criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
-         <a href="https://github.com/ELWalto/modulo1-Blue/blob/main/Projetos/Projeto-03%20%E2%80%93%20Simulador-de-Vota%C3%A7%C3%A3o-Walter.py"><button>Veja mais</button></a>
-      </div>
-
-      <div>
-         <img src="../static/img/controle.jpg" alt="imagem de um controle de video-game">
-         <h2>Projeto 4</h2>
-         <p>Jogo Ficção interativa criado utilizando a linguagem de programação Python. Clique em veja mais e conheça mais detalhes</p>
-         <a href="https://github.com/ELWalto/modulo1-Blue/tree/main/Projetos/projeto-final-master" target="blank"><button>Veja mais</button></a>
-      </div>
 
    </section>
 
